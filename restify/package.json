@@ -1,0 +1,24 @@
+{
+  "name": "ecfs-api-test-restify",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FCCdev/api-tests.git"
+  },
+  "author": "Amir Tahvildaran <amirdt22@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FCCdev/api-tests/issues"
+  },
+  "homepage": "https://github.com/FCCdev/api-tests",
+  "dependencies": {
+    "mysql2": "^0.14.1",
+    "restify": "^2.8.4"
+  }
+}
