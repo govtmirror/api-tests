@@ -2,6 +2,8 @@ var restify = require('restify');
 var proceedings = require('./proceedings.js');
 
 var server = restify.createServer();
+server.use(restify.queryParser());
+
 server.get('/proceedings', proceedings.all);
 server.get('/proceedings/:name', proceedings.one);
 

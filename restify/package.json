@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/FCCdev/api-tests",
   "dependencies": {
+    "lodash": "^2.4.1",
     "mysql2": "^0.14.1",
     "restify": "^2.8.4"
   }
