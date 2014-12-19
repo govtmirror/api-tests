@@ -1,5 +1,4 @@
 var restify = require('restify');
-var mysql   = require('mysql2');
 var proceedings = require('./proceedings.js');
 
 var server = restify.createServer();
