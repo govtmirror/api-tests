@@ -1,5 +1,5 @@
 var restify = require('restify');
-var proceedings = require('./proceedings.js');
+var proceedings = require('../lib/proceedings.js');
 
 var server = restify.createServer();
 server.use(restify.queryParser());
