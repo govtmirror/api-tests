@@ -12,4 +12,6 @@ server.route({ method: 'GET', path: '/proceedings', handler: proceedings.all });
 server.route({ method: 'GET', path: '/proceedings/{name}', handler: proceedings.one });
 
 // Start the server
-server.start();
+server.start(function () {
+    console.log('Server running at:', server.info.uri);
+});
