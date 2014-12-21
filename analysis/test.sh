@@ -6,7 +6,7 @@ for v in $versions; do
   sleep 2
   for c in $concurrencies; do 
     echo testing $v with $c concurrent users
-    ab -n10000 -c$c -g $v-$c.csv http://localhost:8080/proceedings > summary-$v-$c; 
+    ab -n10000 -c$c -g $v-$c.csv http://localhost:8081/proceedings > summary-$v-$c; 
   done
   sleep 2
   kill %1

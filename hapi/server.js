@@ -5,7 +5,7 @@ var proceedings = require('../lib/proceedings.js');
 var server = new Hapi.Server();
 server.connection({
   host: '0.0.0.0',
-  port: 8080
+  port: 8081
 });
 
 server.route({ method: 'GET', path: '/proceedings', handler: proceedings.all });
