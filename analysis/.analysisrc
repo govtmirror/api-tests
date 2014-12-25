@@ -1,0 +1,1 @@
+alias clean='rm summary-* && rm *.csv && rm -rf \*.csv.2 && rm timeseries.jpg && killall node'
