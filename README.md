@@ -3,14 +3,18 @@ api-tests
 
 Benchmarks for the API Backends
 
-To run the tests you need gnuplot, awk, ab.  Also port 8081 needs to be open.
+To run the tests you need gnuplot, awk, ab.  Whichever service you are testing needs to be running (see Docker#Run below)
 
 ```
 cd analysis
-./test.sh
+./test.sh express 8082
+./test.sh hapi 8083
+./test.sh restify 8084
 ```
 
-./timeseries.png will be generated along with a number of log and summary files in the CWD
+After each run ./timeseries.png will be generated/updated along with a number of log and summary files in the CWD
+
+To clear this out `rm .plot.data-*`
 
 == Docker ==
 

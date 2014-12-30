@@ -24,11 +24,3 @@ set ylabel "response time (ms)"
 set datafile separator '\t'
 # Plot the data
 plot \
-  'express-200.csv' every ::2 using 7:5 title 'express response time (200 concurrent)' with points, \
-  'express-500.csv' every ::2 using 7:5 title 'express response time (500 concurrent)' with points, \
-  'hapi-200.csv' every ::2 using 7:5 title 'hapi response time (200 concurrent)' with points, \
-  'hapi-500.csv' every ::2 using 7:5 title 'hapi response time (500 concurrent)' with points, \
-  'restify-200.csv' every ::2 using 7:5 title 'restify response time (200 concurrent)' with points, \
-  'restify-500.csv' every ::2 using 7:5 title 'restify response time (500 concurrent)' with points, \
-  300 title "target"
-exit
