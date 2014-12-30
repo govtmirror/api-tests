@@ -10,6 +10,7 @@ cd analysis
 ./test.sh express 8082
 ./test.sh hapi 8083
 ./test.sh restify 8084
+./test.sh restify-cluster 9084
 ```
 
 After each run ./timeseries.png will be generated/updated along with a number of log and summary files in the CWD
