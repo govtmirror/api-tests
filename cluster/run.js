@@ -5,7 +5,7 @@ var http = require('http');
 var numCPUs = require('os').cpus().length;
 var path = require('path');
 
-var module = path.resolve('../' + process.argv[2] + '/server.js');
+var module = path.resolve(__dirname + '/../' + process.argv[2] + '/server.js');
 console.log('PATH',module);
 
 if (!require.resolve(module)) {
