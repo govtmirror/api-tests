@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/FCCdev/api-tests",
   "dependencies": {
+    "express": "^4.10.6",
     "hapi": "^8.0.0",
     "lodash": "^2.4.1",
     "mysql2": "^0.14.1",
