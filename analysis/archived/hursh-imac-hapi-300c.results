@@ -1,0 +1,56 @@
+ab -n 3000 -c 300 -k -r http://127.0.0.1:8081/proceedings
+This is ApacheBench, Version 2.3 <$Revision: 1554214 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 300 requests
+Completed 600 requests
+Completed 900 requests
+Completed 1200 requests
+Completed 1500 requests
+Completed 1800 requests
+Completed 2100 requests
+Completed 2400 requests
+Completed 2700 requests
+Completed 3000 requests
+Finished 3000 requests
+
+
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            8081
+
+Document Path:          /proceedings
+Document Length:        2 bytes
+
+Concurrency Level:      300
+Time taken for tests:   2.823 seconds
+Complete requests:      3000
+Failed requests:        2781
+   (Connect: 0, Receive: 0, Length: 2781, Exceptions: 0)
+Keep-Alive requests:    3000
+Total transferred:      584998 bytes
+HTML transferred:       438 bytes
+Requests per second:    1062.70 [#/sec] (mean)
+Time per request:       282.300 [ms] (mean)
+Time per request:       0.941 [ms] (mean, across all concurrent requests)
+Transfer rate:          202.37 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2  13.7      0     113
+Processing:    53  268  43.8    269     352
+Waiting:        0   44  99.9      0     352
+Total:         63  271  46.1    270     449
+
+Percentage of the requests served within a certain time (ms)
+  50%    270
+  66%    292
+  75%    306
+  80%    318
+  90%    324
+  95%    330
+  98%    341
+  99%    405
+ 100%    449 (longest request)
