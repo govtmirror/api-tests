@@ -2,8 +2,9 @@
   "name": "api-tests",
   "version": "0.0.0",
   "description": "test bench mark comparisons",
-  "main": "server.js",
+  "main": "restify/server.js",
   "scripts": {
+    "start": "node restify/server.js",
     "test": "npm test"
   },
   "repository": {
