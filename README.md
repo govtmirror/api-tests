@@ -40,5 +40,7 @@ Since the database is on another machine, we'll sub out the linked env variables
 
 ```
 vi env-file #see env-file.sample
-docker run -d --rm --name api-test-restify --env-file=env-file -p 8084:8081 ecfs-api-test node restify/server.js
+docker run -d --name api-test-restify --env-file=env-file -p 8084:8081 ecfs-api-test node restify/server.js
+docker run -d --name api-test-hapi    --env-file=env-file -p 8083:8081 ecfs-api-test node hapi/server.js
+docker run -d --name api-test-express --env-file=env-file -p 8082:8081 ecfs-api-test node express/server.js
 ```
