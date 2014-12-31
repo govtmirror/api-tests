@@ -20,7 +20,7 @@ module.exports.models = {
 
   //connection: 'localMysqlServer',
 
-  connection 'someMysqlServer',
+  connection:'someMysqlServer',
 
   /***************************************************************************
   *                                                                          *
