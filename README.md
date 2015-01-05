@@ -71,7 +71,7 @@ docker run -d --link fccdb:mysql --name api-test-restify-cluster -p 9084:8081 ec
 
 === Flame Graph ===
 
-# Run the following 4 commands in seperate window
+### Run the following 4 commands in seperate window
 
 This is for restify only but can work for the others, right now the dtrace provider
 only works Mac OS X and Solaris-like systems such as Illumos or SmartOS. 
