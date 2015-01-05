@@ -85,17 +85,17 @@ dependencies are:
                 
 Start the node service  
 
-1) $ node restify/server.js  
+    $ node restify/server.js  
 
 This samples the reset service 100 samples per 60 seconds  
 
-2) $ sudo dtrace -P restify* -n 'profile-97/pid == 38703 && arg1/{ @[jstack(150, 8000)] = count(); } tick-60s { exit(0); }' > stacks.out  
+    $ sudo dtrace -P restify* -n 'profile-97/pid == 38703 && arg1/{ @[jstack(150, 8000)] = count(); } tick-60s { exit(0); }' > stacks.out  
 
 run some load, normally this is better suited in an envrionment running a combination of requests  
 
-3) $ for i in {1..200} ; do curl -is http://127.0.0.1:8081/proceedings ; done  
+    $ for i in {1..200} ; do curl -is http://127.0.0.1:8081/proceedings ; done  
 
 Once the last two operations are finsihed use the stack output to generate the flame graph  
 
-4) sudo stackvis dtrace flamegraph-svg < stacks.out > stacks.svg  
+    $ sudo stackvis dtrace flamegraph-svg < stacks.out > stacks.svg  
 
