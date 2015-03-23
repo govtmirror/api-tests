@@ -1,7 +1,7 @@
 api-tests
 =========
 
-Benchmarks for the API Backends
+We created benchmarks/flame graphs for differnet flavors of node RESTful API Backends to test scalability + give some insight, this is a very sparce test and connected only to a MySQL backend.
 
 To run the tests you need gnuplot, awk, ab.  Whichever service you are testing needs to be running (see Docker#Run below)
 
